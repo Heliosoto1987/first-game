@@ -22,7 +22,7 @@ function saveInput() {
 
 function compare() {
     if (accinput === myRandomNumber){
-    footer.innerHTML = 'Felicidades has Ganado..... le has dado de lleno :D';
+    footer.innerHTML = 'Felicidades has Ganado..... le has dado de lleno :D el numero era: ' + myRandomNumber;
     }else if (accinput < myRandomNumber && accinput == (myRandomNumber - 1)) {
     footer.innerHTML = 'Tas a pique ;)';
     }else if (accinput < myRandomNumber) {
