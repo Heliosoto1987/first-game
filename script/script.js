@@ -27,11 +27,11 @@ function compare() {
     }else if (accinput < myRandomNumber && accinput == (myRandomNumber - 1)) {
     footer.innerHTML = 'Tas a pique ;)';
     }else if (accinput < myRandomNumber) {
-    footer.innerHTML = 'Pista tu numero es menor';
+    footer.innerHTML = 'Pista: el numero que has escrito es "menor" al de donato';
     }else if (accinput > myRandomNumber && accinput == (myRandomNumber + 1)) {
     footer.innerHTML = 'Tas a pique ;)';
     }else if (accinput > myRandomNumber) {
-    footer.innerHTML = 'Pista numero es mayor';
+    footer.innerHTML = 'Pista: el numero que has escrito es "Mayor" al de donato';
     }
 }
 
