@@ -48,7 +48,7 @@ function handLeReset() {
     accinput = 0;
     headerImg.classList.remove('turn');
     accadd = 0;
-    footer.innerHTML= 'Escribe un numero y dale a "Prueba"';
+    footer.innerHTML = 'Escribe un numero y dale a "Prueba"';
     return 
 }
 
