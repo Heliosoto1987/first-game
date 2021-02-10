@@ -78,6 +78,11 @@ a{
     color: black;
 }
 
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
 .footer{
     display: flex;
     justify-content: center;
