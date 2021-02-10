@@ -34,20 +34,21 @@ function compare() {
     }else if (accinput > myRandomNumber && accinput == (myRandomNumber + 1)) {
     footer.innerHTML = 'Tas a pique ;)';
     }else if (accinput > myRandomNumber) {
-    footer.innerHTML = 'Pista: el numero que has escrito es "Mayor" al de donato';
+    footer.innerHTML = 'Pista: el numero que has escrito es "Mayor" al de Donato';
     }else if (isNaN( accinput )) {
     footer.innerHTML = 'Debes colocar solo numeros';
     }
 }
 
 function handLeReset() {
-    let selector = document.querySelector('.contaier__input')
+    let selector = document.querySelector('.contaier__input');
     selector.value = '';
     myRandomNumber = getRandomNumber(100);
     count.innerHTML = 0;
     accinput = 0;
-    headerImg.classList.remove('turn')
+    headerImg.classList.remove('turn');
     accadd = 0;
+    footer.innerHTML= 'Escribe un numero y dale a "Prueba"';
     return 
 }
 
