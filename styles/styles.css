@@ -1,9 +1,10 @@
-/* // Examen Javascript // */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Source Code Pro', monospace;
 }
+
 .main{
     background-color: rgb(14, 146, 240);;
     height: 100vh;
@@ -11,7 +12,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .header{
@@ -38,7 +38,7 @@ img{
 }
 
 .header__count{
-    font-size: 60px;
+    font-size: 3rem;
     color: red;
     font-weight: bolder
 }
@@ -49,25 +49,37 @@ img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .contaier__input{
     margin: 5%;
     font-size: 1.2rem;
     text-align: center;
-    background-color: blue;
+    background-color: rgb(186, 186, 237);
     box-shadow: black 10px 10px;
 }
 
-.container__button{
-    font-size: 20px;
+.container__button {
+    font-size: 1.5rem;
     font-weight: bolder;
+    
+}
+
+.container__button:hover{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: black;
+    color: wheat;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .footer{
     display: flex;
-    margin-top: 8%;
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bolder;
@@ -78,4 +90,19 @@ img{
 
 .paragraph{
     text-align: center;
+}
+
+.turn{
+    animation-name: turn;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes turn{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
