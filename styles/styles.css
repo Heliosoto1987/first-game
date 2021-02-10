@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
+    text-align: center;
 }
 
 .main{
@@ -11,12 +12,14 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+
 }
 
 .header{
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
@@ -32,9 +35,7 @@ img{
 }
 
 .instrucion{
-    text-align: center;
     font-style: italic;
-    margin-bottom: 4%;
 }
 
 .header__count{
@@ -44,7 +45,6 @@ img{
 }
 
 .container{
-    margin-top: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,38 +63,22 @@ img{
 .container__button {
     font-size: 1.5rem;
     font-weight: bolder;
-    
+    padding: 2px;
 }
 
 .container__button:hover{
-    font-size: 1.5rem;
-    font-weight: bolder;
     background-color: black;
     color: wheat;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-a:hover{
-    text-decoration: none;
-    color: white;
+    margin-top: 2%;
 }
 
 .footer{
-    display: flex;
-    justify-content: center;
     font-size: 1.5rem;
     font-weight: bolder;
     color: rgb(0, 0, 0);
     border: solid rgb(0, 0, 0) 2px;
-    width: 100%;
-}
-
-.paragraph{
-    text-align: center;
+    width: fit-content;
+    padding: 0 2%;
 }
 
 .turn{

@@ -1,11 +1,10 @@
 /* Mi primer juego java script xD */
 'use strict'
-
 const headerImg = document.querySelector('.header__img');
 const footer = document.querySelector('.footer');
 const button = document.querySelector('.container__button');
-const containeReset = document.querySelector('.container__reset')
-const myRandomNumber = getRandomNumber(100);
+const containeReset = document.querySelector('.reset')
+let myRandomNumber = getRandomNumber(100);
 const count = document.querySelector('.header__count');
 let accinput = 0;
 let accadd = 0;
@@ -20,6 +19,7 @@ function saveInput() {
     const selector = document.querySelector('.contaier__input').value;
     const receiver = parseInt(selector);
     accinput = receiver;
+    console.log(accinput)
     return accinput
 }
 
@@ -35,7 +35,20 @@ function compare() {
     footer.innerHTML = 'Tas a pique ;)';
     }else if (accinput > myRandomNumber) {
     footer.innerHTML = 'Pista: el numero que has escrito es "Mayor" al de donato';
+    }else if (isNaN( accinput )) {
+    footer.innerHTML = 'Debes colocar solo numeros';
     }
+}
+
+function handLeReset() {
+    let selector = document.querySelector('.contaier__input')
+    selector.value = '';
+    myRandomNumber = getRandomNumber(100);
+    count.innerHTML = 0;
+    accinput = 0;
+    headerImg.classList.remove('turn')
+    accadd = 0;
+    return 
 }
 
 function addToTheCounter() {
@@ -51,6 +64,7 @@ function allOfThem() {
 }
 
 button.addEventListener('click', allOfThem);
+containeReset.addEventListener('click', handLeReset)
 
 
 
