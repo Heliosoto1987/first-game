@@ -49,7 +49,7 @@ function handLeReset() {
     headerImg.classList.remove('turn');
     accadd = 0;
     footer.innerHTML = 'Escribe un numero y dale a "Prueba"';
-    return 
+ 
 }
 
 function addToTheCounter() {
