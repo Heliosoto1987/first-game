@@ -28,11 +28,11 @@ function compare() {
     footer.innerHTML = 'Felicidades has Ganado..... le has dado de lleno :D el numero era: ' + myRandomNumber
     headerImg.classList.add('turn')
     }else if (accinput < myRandomNumber && accinput == (myRandomNumber - 1)) {
-    footer.innerHTML = 'Tas a pique ;)';
+    footer.innerHTML = 'Estas a uno de Ganar';
     }else if (accinput < myRandomNumber) {
     footer.innerHTML = 'Pista: el numero que has escrito es "menor" al de donato';
     }else if (accinput > myRandomNumber && accinput == (myRandomNumber + 1)) {
-    footer.innerHTML = 'Tas a pique ;)';
+    footer.innerHTML = 'Estas a uno de Ganar';
     }else if (accinput > myRandomNumber) {
     footer.innerHTML = 'Pista: el numero que has escrito es "Mayor" al de Donato';
     }else if (isNaN( accinput )) {
