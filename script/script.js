@@ -33,41 +33,41 @@ function saveInput() {
 }
 
 function compare() {
-    if (accinput === myRandomNumber && accadd === 1){
+    if (accinput === myRandomNumber && accadd === 1) {
         footerAttempts.classList.add('displayNone');
         footerImg.classList.add('displayNone');
         footerImgWin.src = './assets/win.svg';
-        footerText.innerHTML = `¡Ganaste con ${ accadd } intento!`;
+        footerText.innerHTML = `¡Ganaste con ${accadd} intento!`;
         footerText.classList.remove('footer__clue--text');
         footerText.classList.add('footer__clue--win');
 
-    }else if (accinput === myRandomNumber  ){
-        footerText.innerHTML = `¡Ganaste con ${ accadd } intentos!`;
+    } else if (accinput === myRandomNumber) {
+        footerText.innerHTML = `¡Ganaste con ${accadd} intentos!`;
         footerAttempts.classList.add('displayNone');
         footerImg.classList.add('displayNone');
         footerImgWin.src = './assets/win.svg';
         footerText.classList.remove('footer__clue--text');
         footerText.classList.add('footer__clue--win');
-       
-    }else if (accinput < myRandomNumber && accinput == (myRandomNumber - 1)) {
+
+    } else if (accinput < myRandomNumber && accinput == (myRandomNumber - 1)) {
         footerImg.classList.remove('displayNone');
-        footerText .innerHTML = 'Estas a uno de Ganar';
-        
-    }else if (accinput < myRandomNumber) {
-        footerImg.classList.remove('displayNone');       
-        footerText .innerHTML = 'Pista: el numero que has escrito es "menor" al de donato';
+        footerText.innerHTML = 'Estas a uno de Ganar';
 
-    }else if (accinput > myRandomNumber && accinput == (myRandomNumber + 1)) {
-        footerImg.classList.remove('displayNone'); 
-        footerText .innerHTML = 'Estas a uno de Ganar';
+    } else if (accinput < myRandomNumber) {
+        footerImg.classList.remove('displayNone');
+        footerText.innerHTML = 'Pista: el numero que has escrito es "menor" al de donato';
 
-    }else if (accinput > myRandomNumber) {
-        footerImg.classList.remove('displayNone');  
-        footerText .innerHTML = 'Pista: el numero que has escrito es "Mayor" al de Donato';
+    } else if (accinput > myRandomNumber && accinput == (myRandomNumber + 1)) {
+        footerImg.classList.remove('displayNone');
+        footerText.innerHTML = 'Estas a uno de Ganar';
 
-    }else if (isNaN( accinput )) {
-        footerImg.classList.remove('displayNone');  
-        footerText .innerHTML = 'Debes colocar solo numeros';
+    } else if (accinput > myRandomNumber) {
+        footerImg.classList.remove('displayNone');
+        footerText.innerHTML = 'Pista: el numero que has escrito es "Mayor" al de Donato';
+
+    } else if (isNaN(accinput)) {
+        footerImg.classList.remove('displayNone');
+        footerText.innerHTML = 'Debes colocar solo numeros';
     }
 }
 
@@ -103,7 +103,7 @@ containeReset.addEventListener('click', handLeReset)
 
 
 
-  
-  
+
+
 
 
