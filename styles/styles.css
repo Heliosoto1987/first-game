@@ -1,13 +1,13 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Candara', 'Arial';
     text-align: center;
+    background-color: #f2f2f2;
 }
 
-.main{
-    background-color: var(--color-fill-white);
+.main {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -16,16 +16,16 @@
     align-items: center;
 }
 
-.buttonsContainer{
+.buttonsContainer {
     margin-left: 20px;
 }
 
-.header__title{
+.header__title {
     margin-right: 60px;
     margin-left: 20px;
 }
 
-.header__instrucion{
+.header__instrucion {
     width: 320px;
     text-align: start;
     margin: 20px 20px 40px;
@@ -33,22 +33,22 @@
     letter-spacing: 1.07px;
 }
 
-img{
+img {
     width: 100%;
     height: 100%;
 }
 
-.instrucion{
+.instrucion {
     font-style: italic;
 }
 
-.header__count{
+.header__count {
     font-size: 3rem;
     color: red;
     font-weight: bolder
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,7 @@ img{
     font-size: 1.5rem;
 }
 
-.container__input{
+.container__input {
     width: 320px;
     height: 38px;
     margin: 0 0 20px;
@@ -76,7 +76,12 @@ img{
     cursor: pointer;
 }
 
-.footer{
+.container__button:hover {
+    color: #c8436b;
+    background-color: #77a59f;
+}
+
+.footer {
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -84,12 +89,12 @@ img{
     align-items: center;
 }
 
-.footer__img{
+.footer__img {
     width: 200px;
     height: 186px;
 }
 
-.footer__attempts{
+.footer__attempts {
     margin-top: 30px;
     display: flex;
     font-family: Candara;
@@ -100,53 +105,64 @@ img{
     color: var(--color-fill-black-grey);
 }
 
-.footer__attempts--item{
+.footer__attempts--item {
     text-decoration: underline;
 }
 
-.footer__clue{
+.footer__attempts--counter {
+    margin-left: 5px;
+}
+
+.footer__clue {
     display: flex;
     width: 203px;
     justify-content: space-between;
 }
 
-.footer__clue--text{
-    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+.footer__clue--win {
+    font-size: 20px;
+}
+
+.footer__clue--text {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     font-family: Candara;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1.87px;
-    color: rgb(72, 32, 32);
+    color: #c8436b;
     text-align: end;
+    width: 100%;
 }
 
-.footer__clue--img{
+.footer__clue--img {
     width: 100px;
     height: 50px;
 }
 
-.displayNone{
+.footer__clue--win {
+    color: #77a59f;
+    font-weight: bold;
+}
+
+.displayNone {
     display: none;
 }
 
-@media (min-width: 1300px){
-
-    .main{
+@media (min-width: 1300px) {
+    .main {
         display: flex;
         flex-direction: row;
         width: 100%;
         height: 100%;
         margin-top: 160px;
     }
-
-    .main__flex{
+    .main__flex {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         flex-grow: 1;
     }
-
-    .header__title{
+    .header__title {
         width: 100%;
         font-family: Candara;
         font-size: 5rem;
@@ -154,8 +170,7 @@ img{
         color: var(--color-fill-black-grey);
         margin-left: 60px;
     }
-
-    .header__instrucion{
+    .header__instrucion {
         width: 720px;
         font-family: Candara;
         font-size: 20px;
@@ -164,9 +179,8 @@ img{
         color: var(--color-fill-black-grey);
         margin-left: 60px;
     }
-
-    .container__input{
-        font-size:  20px;
+    .container__input {
+        font-size: 20px;
         font-weight: bold;
         width: 528px;
         height: 88px;
@@ -175,42 +189,44 @@ img{
         box-shadow: inset 1px -1px 0 0 rgba(0, 0, 0, 0.2);
         border: solid 1px var(--color-fill-black-grey);
     }
-
-    .container__button{
+    .buttonsContainer {
+        width: 528px;
+        display: flex;
+        margin-left: 120px;
+        justify-content: space-between;
+    }
+    .container__button {
         height: 88px;
         width: 244px;
-        margin-left: 120px;
-        border-radius: 6px;
-        box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.2);
+        margin: 0;
+        margin-top: 35px;
+        padding: 40px 60px 64px;
+        font-size: 28px;
     }
-
-    .footer{
+    .footer {
         margin-top: 0;
         margin-right: 151px;
-    
     }
-
-    .footer__img{
-     
+    .footer__img {
         width: 262px;
         height: 250px;
     }
-
+    .footer__win {
+        width: 393px;
+    }
+    .footer__clue--win {
+        font-size: 44px;
+    }
+    .footer__clue {
+        width: 522px;
+    }
 }
 
-@media (min-width: 1600px){
-
-    .main{
+@media (min-width: 1600px) {
+    .main {
         justify-content: space-around;
-     
     }
-
-    .main__flex{
+    .main__flex {
         flex-grow: 0;
-       
-        
-        
     }
 }
-
-

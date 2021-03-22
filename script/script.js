@@ -1,4 +1,4 @@
-/* Mi primer juego java script xD */
+/* Mi primer juego javascript xD */
 "use strict";
 const footer = document.querySelector(".footer__clue--text");
 const button = document.querySelector(".container__button");
