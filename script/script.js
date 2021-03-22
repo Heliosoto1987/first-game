@@ -8,6 +8,7 @@ const count = document.querySelector(".footer__attempts--counter");
 const footerImg = document.querySelector(".footer__clue--img");
 let accinput = 0;
 let accadd = 0;
+const footerImage = document.querySelector(".footer__img--item");
 console.log(`Mi número aleatorio es ${myRandomNumber}`);
 
 function getRandomNumber(max) {
@@ -27,6 +28,8 @@ function compare() {
     footer.innerHTML =
       "Felicidades has Ganado..... le has dado de lleno :D el numero era: " +
       myRandomNumber;
+    footerImage.src =
+      "https://raw.githubusercontent.com/Heliosoto1987/images/50b6df31c0e79ff161b9b7aa749e3f096c976ffc/portafolios/win.svg";
   } else if (accinput < myRandomNumber && accinput == myRandomNumber - 1) {
     footerImg.classList.remove("displayNone");
     footer.innerHTML = "Estas a uno de Ganar";
@@ -56,6 +59,8 @@ function handLeReset() {
   accadd = 0;
   footer.innerHTML = 'Escribe un numero y dale a "Prueba"';
   console.log(`Mi número aleatorio es ${myRandomNumber}`);
+  footerImage.src =
+    "https://github.com/Heliosoto1987/images/blob/master/portafolios/pensando.png?raw=true";
 }
 
 function addToTheCounter() {
